@@ -51,6 +51,12 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
+          
+          # Loop: fjonaaa-patch-1: Endre standard karbotider 
+          curl https://github.com/fjonaaa/Loop/commit/7302631a415373685d256fba0a768e23ec0dc3e8.patch | git apply -v --directory=loop
+
+          # LoopKit: fjonaaa-patch-1: Ljumjev verdier
+          curl https://github.com/fjonaaa/Loopkit/commit/8503005978fbdb727fb07cf9400ae09ae84fc5a5.patch | git apply -v --directory=loopKit
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
