@@ -300,6 +300,9 @@ jobs:
           # LoopKit: fjonaaa-patch-2: Update ExponentialInsulinModelPreset.swift
           curl https://github.com/fjonaaa/Loopkit/commit/7ce123e06e214ca1f49ed98c97e4eee92d04da99.patch | git apply -v --directory=loopKit
 
+          # Loop: fjonaaa-patch-3: Update LoopCoreConstants.swift
+          curl https://github.com/fjonaaa/Loop/commit/6eea958e508481b535abe998027faf5b888425a6.patch | git apply -v --directory=loop
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
