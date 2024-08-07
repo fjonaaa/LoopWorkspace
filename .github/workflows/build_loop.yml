@@ -297,10 +297,10 @@ jobs:
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
           
-          # Loop: fjonaaa-patch-2:Endre standard karbotider
+      # Loop: fjonaaa-patch-2:Endre standard karbotider
           curl https://github.com/fjonaaa/Loop/commit/0af26e410e34a528038f2c1e1ce175a105d9e81e.patch | git apply -v --directory=loop
 
-          # LoopKit: fjonaaa-patch-2:Update ExponentialInsulinModelPreset.swift
+      # LoopKit: fjonaaa-patch-2:Update ExponentialInsulinModelPreset.swift
           curl https://github.com/fjonaaa/Loopkit/commit/7ce123e06e214ca1f49ed98c97e4eee92d04da99.patch | git apply -v --directory=loopKit
 
       # Patch Fastlane Match to not print tables
